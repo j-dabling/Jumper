@@ -13,7 +13,7 @@ class randomWord:
 
     def __init__(self):
         # words.txt contains a list of many words to choose from.
-        # Credit for making the list goes to user dwyl on github!
+        # Credit for making the list goes to user dwyl on github:
         # https://github.com/dwyl/english-words
         wordList = open('words.txt', 'r')
         self._complete_word = random.choice(wordList.readlines())
