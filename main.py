@@ -1,4 +1,4 @@
-from director import director
+from game.director import director
 
 # Initializes director class and starts the game.
 def main():

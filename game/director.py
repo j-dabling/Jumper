@@ -1,5 +1,5 @@
-from jumperman import jumper
-from wordSelection.randomWord import randomWord
+from game.jumperman import jumper
+from game.wordSelection.randomWord import randomWord
 
 # Initializes all modules required for a game of jumper.
 class director:

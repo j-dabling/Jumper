@@ -13,7 +13,7 @@ class randomWord:
         # words.txt contains a list of many words to choose from.
         # Credit for making the list goes to user dwyl on github:
         # https://github.com/dwyl/english-words
-        wordList = open('wordSelection/words.txt', 'r')
+        wordList = open('game/wordSelection/words.txt', 'r')
         self._complete_word = random.choice(wordList.readlines())
 
         # # guessing_word must be the length of _complete_word.
