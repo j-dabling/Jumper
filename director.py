@@ -16,7 +16,7 @@ class director:
             print(line)
 
     # Starts and runs the game, checks for win conditions, and accepts user input.
-    def main(self):
+    def start(self):
         # The loop will check to see if the word has been guessed completely,
         # or if the player has run out of guesses.
         while '_' in self.word.guessing_word and len(self.structure.parachute) > 0:
