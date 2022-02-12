@@ -8,8 +8,7 @@ import random
 
 class randomWord:
     _complete_word = ''
-    _complete_letters = []
-    guessing_word = []
+    guessing_word = ''
 
     def __init__(self):
         # words.txt contains a list of many words to choose from.
@@ -18,12 +17,9 @@ class randomWord:
         wordList = open('words.txt', 'r')
         self._complete_word = random.choice(wordList.readlines())
 
-        # _complete_word is separated into a list of characters for reference against guesses.
-        self._complete_letters = [char for char in self._complete_word]
-
-        # # guessing_word is a list of the length of _complete_word.
+        # # guessing_word must be the length of _complete_word.
         # Each space is set to an underscore to represent a blank space.
-        self.guessing_word = ['_'] * len(self._complete_letters)
+        self.guessing_word = '_' * len(self._complete_letters)
     
 
     # Given a letter (char) guess from the player, checks if their guess is correct.
